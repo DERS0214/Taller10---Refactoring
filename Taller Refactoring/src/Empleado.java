@@ -81,5 +81,12 @@ public class Empleado {
         this.departamento = departamento;
     }
 
+    public void imprimirDetalles() {
+        System.out.println("Nombre: " + this.getNombre());
+        System.out.println("Genero: " + this.getNombre());
+        System.out.println("Salario: " + this.getSalarioBase());
+        System.out.println("Horas trabajadas: " + this.getHorasTrabajadas());
+        System.out.println("Departamento: " + this.getDepartamento());
+    }
     // Más metodos
 }
