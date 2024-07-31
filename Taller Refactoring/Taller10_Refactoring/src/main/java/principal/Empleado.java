@@ -11,17 +11,17 @@ package principal;
 public class Empleado {
     private String nombre;
     private double salarioBase;
+    private String genero;
     private int horasTrabajadas;
     private String departamento;
-    private double tarifaHora;
 
     public Empleado(){}
-    public Empleado(String nombre, double salarioBase, int horasTrabajadas, double tarifaHora, String departamento) {
+    public Empleado(String nombre, double salarioBase, int horasTrabajadas, String departamento, String genero) {
         this.nombre = nombre;
         this.salarioBase = salarioBase;
         this.horasTrabajadas = horasTrabajadas;
-        this.tarifaHora = tarifaHora;
         this.departamento = departamento;
+        this.genero = genero;
     }
 
     public double calcularSalario() {
@@ -73,14 +73,6 @@ public class Empleado {
 
     public void setHorasTrabajadas(int horasTrabajadas) {
         this.horasTrabajadas = horasTrabajadas;
-    }
-
-    public double getTarifaHora() {
-        return tarifaHora;
-    }
-
-    public void setTarifaHora(double tarifaHora) {
-        this.tarifaHora = tarifaHora;
     }
 
     public String getDepartamento() {
